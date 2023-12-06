@@ -1,0 +1,15 @@
+
+https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH
+    sudo apt install zsh  //To install zsh
+    chsh -s $(which zsh)
+
+getent group  // para ver los groupes
+su - beto //To enter a group
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+       nano ~/.zshrc 
+       nano ~/.zshrc find plugins=(git)
+        plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+   44  git clone git@github.com:zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+   47  git clone git@github.com:zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+   48  source ~/.zshrc
